@@ -1,6 +1,6 @@
 const { error } = require('console');
 const { User, Thought } = require('../models');
-module.exports = {
+const thoughtcontroller = {
     getAllThoughts(req, res) {
         Thought.find()
             .sort({ createdAt: -1 })
