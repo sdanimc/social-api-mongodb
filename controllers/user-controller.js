@@ -1,5 +1,5 @@
 const { error } = require('console');
-const { User, Thoughts } = require('../models');
+const { User, Thought } = require('../models');
 module.exports = {
     getAllUsers(req,res){
         User.find()
